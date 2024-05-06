@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Web Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon-editor.png">
+</head>
+<body>
+<div id="toolbar">
+    <button type="button" class="btn btn-outline-dark" id="undo"><i class="bi bi-arrow-counterclockwise"></i></button>
+    <button type="button" class="btn btn-outline-dark" id="redo"><i class="bi bi-arrow-clockwise"></i></button>
+    <button type="button" class="btn btn-primary" id="clear">Clear</button>
+</div>
+<div class="editing-area">
+    <div id="sidebar" class="ui relaxed divided list"></div>
+
+    <div id="canvas"></div>
+
+</div>
+
+<script src="dist/bundle.js"></script>
+
+</body>
+</html>
