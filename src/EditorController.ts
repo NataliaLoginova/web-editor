@@ -1,5 +1,5 @@
 import { NAMES_LIST } from './namesList';
-import { UndoRedoHistory } from './undoRedoHistory';
+import { UndoRedoHistory } from './UndoRedoHistory';
 import { EditorView } from './EditorView';
 
 export class EditorController {
@@ -7,9 +7,9 @@ export class EditorController {
     private undoRedoHistory: UndoRedoHistory;
     private editorView: any;
 
-    constructor(editorView: EditorView) {
+    constructor(editorView: EditorView, undoRedoHistory: UndoRedoHistory) {
         this.editorView = editorView;
-        this.undoRedoHistory = new UndoRedoHistory();
+        this.undoRedoHistory = undoRedoHistory;
         this.editorView.onUndo(this.handleUndo.bind(this));
         this.editorView.onRedo(this.handleRedo.bind(this));
         this.editorView.onClear(this.handleClear.bind(this));

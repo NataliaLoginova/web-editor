@@ -1,7 +1,7 @@
 import * as d3 from 'd3';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { Command } from "./undoRedoHistory";
+import { Command } from "./UndoRedoHistory";
 
 export class EditorView {
     private svg: d3.Selection<SVGSVGElement, unknown, HTMLElement, any>;
